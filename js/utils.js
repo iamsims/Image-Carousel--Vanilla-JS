@@ -13,8 +13,14 @@ function Button(index){
         ind= this.index;
         direction = Math.sign(activeIndex- ind);
         shiftNumber = Math.abs(activeIndex- ind);    
-        
-        if (shiftNumber!= 0){
+        translate(ind, shiftNumber, direction);
+        }.bind(this)
+    );
+
+};
+
+function translate(ind,shiftNumber, direction){
+    if (shiftNumber!= 0){
         Slide= setInterval(()=>{
         shift+= SHIFT;
         if(shift==shiftNumber*WIDTH)
@@ -28,13 +34,9 @@ function Button(index){
                 image.setPositions(y+direction*SHIFT);
         });
         
-        }, TIME);
-        }
-        }.bind(this)
-    );
-
-};
-
+        }, TIME/shiftNumber);
+        }  
+}
 
 function Image(image,index){
     this.index = index;
