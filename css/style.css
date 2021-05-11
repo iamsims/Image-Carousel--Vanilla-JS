@@ -11,16 +11,6 @@
    width:600px;
    height:auto;
    position:absolute;
-   left:-100px;
-   top:0px;
-}
-
-img:nth-child(2){
-    left:500px;
-}
-
-img:nth-child(3){
-    left:1200px;
 }
 
 .carousel-button{
@@ -51,5 +41,11 @@ img:nth-child(3){
     width:15px;
     border-radius: 50%;
     border: 1px solid grey;
-    background:transparent;
+    margin: 2px;
+    background: transparent;
 }
+
+.nav-button:hover{
+    background:grey;
+}
+
