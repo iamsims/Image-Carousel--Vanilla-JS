@@ -3,7 +3,7 @@
     position:relative;
     width:600px;
     height:400px;
-    margin:auto;
+    margin:50px auto;
     border: 2px solid grey ;
 }
 
@@ -14,11 +14,21 @@
 }
 
 .carousel-button{
+    height:400px;
     position:absolute ;
     top:50%;
     transform: translateY(-50%);
     font-size: 20px;
+    cursor: pointer;
+    color:white;
+    background: grey;
+    opacity:0.5;
+    padding:0px 10px;
+    border:none;
+}
 
+.carousel-button:hover{
+    opacity:0.3;
 }
 
 .carousel-button.left{
@@ -40,12 +50,12 @@
     height:15px;
     width:15px;
     border-radius: 50%;
-    border: 1px solid grey;
-    margin: 2px;
-    background: transparent;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
 }
 
 .nav-button:hover{
-    background:grey;
+    opacity: 0.8;
 }
 
